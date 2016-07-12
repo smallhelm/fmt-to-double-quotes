@@ -1,11 +1,7 @@
-#!/usr/bin/env node
-
 var fs = require("fs")
 var glob = require("glob")
 var path = require("path")
 var toDoubleQuotes = require("to-double-quotes");
-
-var patterns = process.argv.slice(2);
 
 var fixFile = function(file){
   fs.readFile(file, function(err, data){
@@ -14,11 +10,13 @@ var fixFile = function(file){
   });
 };
 
-patterns.forEach(function(pattern){
-  glob(pattern, function(err, files){
-    if(err) throw err;
-    files.forEach(function(file){
-      fixFile(path.resolve(__dirname, file));
+module.exports = function(patterns){
+  patterns.forEach(function(pattern){
+    glob(pattern, function(err, files){
+      if(err) throw err;
+      files.forEach(function(file){
+        fixFile(path.resolve(__dirname, file));
+      });
     });
   });
-});
+};
