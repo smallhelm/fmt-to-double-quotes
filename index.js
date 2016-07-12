@@ -14,9 +14,7 @@ module.exports = function(patterns){
   patterns.forEach(function(pattern){
     glob(pattern, function(err, files){
       if(err) throw err;
-      files.forEach(function(file){
-        fixFile(path.resolve(__dirname, file));
-      });
+      files.forEach(fixFile);
     });
   });
 };
