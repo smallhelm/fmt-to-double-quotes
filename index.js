@@ -1,6 +1,5 @@
 var fs = require("fs")
 var glob = require("glob")
-var path = require("path")
 var toDoubleQuotes = require("to-double-quotes");
 
 var fixFile = function(file){
