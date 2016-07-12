@@ -1,6 +1,6 @@
 {
   "name": "fmt-to-double-quotes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI script to change single quote strings to double quote strings",
   "main": "index.js",
   "bin": {
