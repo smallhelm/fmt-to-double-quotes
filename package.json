@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "CLI script to change single quote strings to double quote strings",
   "main": "index.js",
+  "bin": {
+    "fmt-to-double-quotes": "index.js"
+  },
   "scripts": {
     "test": "echo passed"
   },
