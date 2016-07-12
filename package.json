@@ -1,0 +1,30 @@
+{
+  "name": "fmt-to-double-quotes",
+  "version": "0.0.0",
+  "description": "CLI script to change single quote strings to double quote strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo passed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smallhelm/fmt-to-double-quotes.git"
+  },
+  "keywords": [
+    "cli",
+    "glob",
+    "format",
+    "code",
+    "doublequotes"
+  ],
+  "author": "farskipper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smallhelm/fmt-to-double-quotes/issues"
+  },
+  "homepage": "https://github.com/smallhelm/fmt-to-double-quotes#readme",
+  "dependencies": {
+    "glob": "^7.0.5",
+    "to-double-quotes": "^2.0.0"
+  }
+}
